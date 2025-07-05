@@ -1,86 +1,103 @@
-# 📘 Student Marks Report Generator
 
-Generate professional PDF reports of student marks using **Python**, **Pandas**, and **FPDF**.  
-This project is designed for educational purposes and demonstrates data handling with PDFs.  
-It can be run easily on **Google Colab** or **locally** on your machine.
+# 📘 Student Marks Report Generator (Python PDF Project)
+
+This project is a simple yet effective **Python automation tool** that reads student marks data from a CSV file and generates a **professionally formatted PDF report**. It includes a detailed table of marks, average statistics, and highlights the top and bottom performers.
 
 ---
 
-## 🚀 Run on Google Colab
+## 📌 Features
 
-👉 [[Run this notebook on Google Colab]
-(https://colab.research.google.com/drive/1BViGspfLGuynDXp5wZ8l9x5sHYxfLrjI?usp=sharing)
+- 📊 Auto-calculates **average, highest, and lowest marks**
+- 🧾 Generates a clean, printable **PDF report**
+- 📋 Data is stored in a CSV file for easy updates
+- 🖨️ Includes formatted tables and headers
+- 🖥️ Fully compatible with **VS Code** and **Google Colab**
+
 ---
 
-## 📦 Requirements
+## 📁 Repository Structure
 
-For **local setup**, install the required libraries using:
+```
+
+student-marks-report/
+│
+├── data.csv                   # Sample student data (name, subject, marks)
+├── student\_report\_generator.py # Python script to generate the report
+├── output/
+│   └── student\_marks\_report.pdf  # Auto-generated PDF report
+├── requirements.txt           # Required Python libraries
+└── README.md                  # Project overview (this file)
+
+````
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+Install Python and required libraries:
 
 ```bash
-pip install -r requirements.txt
+pip install pandas fpdf
+````
 
-**Libraries used in this project:**
+### ▶️ Run the Script
 
-pandas → for handling tabular data
+```bash
+python student_report_generator.py
+```
 
-fpdf → for generating PDF files
+The PDF will be saved in the `output/` folder.
 
-| File                         | Description                                     |
-| ---------------------------- | ----------------------------------------------- |
-| `Student_Marks_Report.ipynb` | 📓 Google Colab notebook with full Python code  |
-| `data.csv`                   | 📂 Sample dataset used in the notebook          |
-| `report.pdf`                 | 📄 Example of the generated PDF report          |
-| `requirements.txt`           | 📦 Required Python packages for local execution |
-| `README.md`                  | 📝 This file (project documentation)            |
+---
 
-**dataset example :**
+## 📊 Sample Data (CSV)
 
+```csv
 Name,Subject,Marks
 John Paul,Maths,85
 Riya Sharma,Science,92
 Amit Verma,English,78
-Sneha Mehta,History,88
-David R.,Maths,74
-Pooja Patil,Science,91
-Rakesh Nair,English,67
-Anjali Singh,History,81
+...
+```
 
-📄 Sample PDF Output
-The report.pdf displays:
+You can modify this data in `data.csv` as needed.
 
-✅ Title → Student Marks Report
+---
 
-✅ Average Marks → calculated from the dataset
+## 📎 Output: Sample PDF Preview
 
-✅ List of students with their marks
+The generated PDF includes:
 
+* Project Title & Date
+* Summary Statistics
+* Formatted Marks Table
+* Page Footer with numbers
 
-💻 How to Run Locally
-1️⃣ Clone the repository:
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/YOUR-USERNAME/student-marks-report-pdf.git
-cd student-marks-report-pdf
-2️⃣ Install dependencies:
+## 🛠️ Technologies Used
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3️⃣ Run the script:
+* **Python**
+* **Pandas** – data processing
+* **FPDF** – PDF generation
+* **VS Code** – development
+* (Optional) Google Colab – to test online
 
-bash
-Copy
-Edit
-python generate_report.py
+---
 
+## 📌 Author
 
-👩‍💻 Author
-Vidhi Mandhana
-🔗 GitHub Profile: https://github.com/vidhi1105
+👩‍💻 **Vidhi Mandhana**
+Intern at Elite Tech Internships
+GitHub: [github.com/VidhiMandhana](https://github.com/VidhiMandhana)
 
-📬 License
+---
+
+## 📜 License
+
 This project is licensed under the MIT License.
+Feel free to use and modify for learning or internal use!
+
 
